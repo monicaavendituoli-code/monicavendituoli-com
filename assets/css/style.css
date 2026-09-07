@@ -1,33 +1,33 @@
 /* ==========================================================================
    monicavendituoli.com
-   Palette: https://coolors.co/palette/606c38-283618-fefae0-dda15e-bc6c25
+   Palette: https://coolors.co/palette/011627-fdfffc-2ec4b6-e71d36-ff9f1c
    ========================================================================== */
 
 :root {
   /* Brand ramp */
-  --moss:      #606c38;
-  --pine:      #283618;
-  --cornsilk:  #fefae0;
-  --wheat:     #dda15e;
-  --clay:      #bc6c25;
+  --ink-900:   #011627;  /* rich black */
+  --paper:     #fdfffc;  /* baby powder */
+  --teal:      #2ec4b6;  /* tiffany blue */
+  --red:       #e71d36;  /* rose red */
+  --orange:    #ff9f1c;  /* orange peel */
 
-  /* Semantic tokens — light (default) */
-  --bg:           #fefae0;
-  --bg-raised:    #fffdf2;
-  --bg-sunken:    #f6f0d4;
-  --text:         #283618;
-  --text-muted:   #55603c;
-  --text-subtle:  #7a8158;
-  --accent:       #bc6c25;
-  --accent-hover: #9c5719;
-  --accent-soft:  rgba(188, 108, 37, 0.10);
-  --rule:         rgba(40, 54, 24, 0.14);
-  --rule-strong:  rgba(40, 54, 24, 0.28);
-  --tag-bg:       rgba(96, 108, 56, 0.12);
-  --tag-text:     #4b5530;
-  --shadow:       0 1px 2px rgba(40,54,24,.06), 0 8px 24px -12px rgba(40,54,24,.18);
-  --shadow-lift:  0 2px 4px rgba(40,54,24,.08), 0 18px 40px -18px rgba(40,54,24,.30);
-  --focus:        #bc6c25;
+  /* Semantic tokens, light (default) */
+  --bg:           #fdfffc;
+  --bg-raised:    #ffffff;
+  --bg-sunken:    #f2f7f8;
+  --text:         #011627;
+  --text-muted:   #3d566a;
+  --text-subtle:  #517086;
+  --accent:       #14837a;   /* teal darkened to 4.58:1 for link text */
+  --accent-hover: #0f7268;
+  --accent-soft:  rgba(46, 196, 182, 0.14);
+  --rule:         rgba(1, 22, 39, 0.12);
+  --rule-strong:  rgba(1, 22, 39, 0.26);
+  --tag-bg:       rgba(46, 196, 182, 0.16);
+  --tag-text:     #0f6b62;
+  --shadow:       0 1px 2px rgba(1,22,39,.06), 0 8px 24px -12px rgba(1,22,39,.20);
+  --shadow-lift:  0 2px 4px rgba(1,22,39,.08), 0 18px 40px -18px rgba(1,22,39,.32);
+  --focus:        #14837a;
 
   /* Type */
   --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
@@ -42,46 +42,45 @@
   --step: clamp(1rem, 0.6rem + 1.2vw, 1.35rem);
 }
 
-/* Dark theme — applied by system pref unless user forced light */
+/* Shared dark values, used by both the system preference and the toggle */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg:           #1c2611;
-    --bg-raised:    #24301a;
-    --bg-sunken:    #16200d;
-    --text:         #f2eed8;
-    --text-muted:   #c3c8a8;
-    --text-subtle:  #98a07a;
-    --accent:       #e0a05c;
-    --accent-hover: #f0b878;
-    --accent-soft:  rgba(224, 160, 92, 0.14);
-    --rule:         rgba(254, 250, 224, 0.16);
-    --rule-strong:  rgba(254, 250, 224, 0.32);
-    --tag-bg:       rgba(221, 161, 94, 0.16);
-    --tag-text:     #ddb98a;
-    --shadow:       0 1px 2px rgba(0,0,0,.30), 0 8px 24px -12px rgba(0,0,0,.55);
-    --shadow-lift:  0 2px 4px rgba(0,0,0,.35), 0 18px 40px -18px rgba(0,0,0,.65);
-    --focus:        #e0a05c;
+    --bg:           #011627;
+    --bg-raised:    #07202f;
+    --bg-sunken:    #010f1c;
+    --text:         #fdfffc;
+    --text-muted:   #b8c9d4;
+    --text-subtle:  #8fa6b5;
+    --accent:       #2ec4b6;
+    --accent-hover: #4ad4c7;
+    --accent-soft:  rgba(46, 196, 182, 0.18);
+    --rule:         rgba(253, 255, 252, 0.15);
+    --rule-strong:  rgba(253, 255, 252, 0.30);
+    --tag-bg:       rgba(46, 196, 182, 0.18);
+    --tag-text:     #6fded2;
+    --shadow:       0 1px 2px rgba(0,0,0,.40), 0 8px 24px -12px rgba(0,0,0,.65);
+    --shadow-lift:  0 2px 4px rgba(0,0,0,.45), 0 18px 40px -18px rgba(0,0,0,.75);
+    --focus:        #2ec4b6;
   }
 }
 
-/* Dark theme — forced by the toggle */
 :root[data-theme="dark"] {
-  --bg:           #1c2611;
-  --bg-raised:    #24301a;
-  --bg-sunken:    #16200d;
-  --text:         #f2eed8;
-  --text-muted:   #c3c8a8;
-  --text-subtle:  #98a07a;
-  --accent:       #e0a05c;
-  --accent-hover: #f0b878;
-  --accent-soft:  rgba(224, 160, 92, 0.14);
-  --rule:         rgba(254, 250, 224, 0.16);
-  --rule-strong:  rgba(254, 250, 224, 0.32);
-  --tag-bg:       rgba(221, 161, 94, 0.16);
-  --tag-text:     #ddb98a;
-  --shadow:       0 1px 2px rgba(0,0,0,.30), 0 8px 24px -12px rgba(0,0,0,.55);
-  --shadow-lift:  0 2px 4px rgba(0,0,0,.35), 0 18px 40px -18px rgba(0,0,0,.65);
-  --focus:        #e0a05c;
+  --bg:           #011627;
+  --bg-raised:    #07202f;
+  --bg-sunken:    #010f1c;
+  --text:         #fdfffc;
+  --text-muted:   #b8c9d4;
+  --text-subtle:  #8fa6b5;
+  --accent:       #2ec4b6;
+  --accent-hover: #4ad4c7;
+  --accent-soft:  rgba(46, 196, 182, 0.18);
+  --rule:         rgba(253, 255, 252, 0.15);
+  --rule-strong:  rgba(253, 255, 252, 0.30);
+  --tag-bg:       rgba(46, 196, 182, 0.18);
+  --tag-text:     #6fded2;
+  --shadow:       0 1px 2px rgba(0,0,0,.40), 0 8px 24px -12px rgba(0,0,0,.65);
+  --shadow-lift:  0 2px 4px rgba(0,0,0,.45), 0 18px 40px -18px rgba(0,0,0,.75);
+  --focus:        #2ec4b6;
 }
 
 /* --------------------------------------------------------------------------
@@ -513,7 +512,7 @@ hr {
 
 /* Notice / callout */
 .note {
-  border-left: 3px solid var(--moss);
+  border-left: 3px solid var(--teal);
   background: var(--tag-bg);
   padding: .9rem 1.1rem;
   border-radius: 0 var(--radius) var(--radius) 0;
@@ -541,7 +540,7 @@ hr {
 .prose blockquote {
   margin: 1.8em 0;
   padding: .2em 0 .2em 1.3em;
-  border-left: 3px solid var(--wheat);
+  border-left: 3px solid var(--orange);
   color: var(--text-muted);
   font-style: italic;
 }
@@ -627,3 +626,18 @@ hr {
   background: var(--bg-raised);
   max-width: 560px;
 }
+
+/* Facebook post embeds */
+.fb-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+  align-items: start;
+}
+.fb-embed {
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 1rem;
+  background: var(--bg-raised);
+}
+.fb-embed iframe { display: block; width: 100%; border: 0; background: #fff; border-radius: 8px; }
