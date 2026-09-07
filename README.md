@@ -119,6 +119,13 @@ The button is written but commented out on `index.html` (search for `RÉSUMÉ BU
 | `social-media-software-strategy-early-stage-ria.pdf` | Anonymized six-week platform stand-up plan |
 | `press-release-homepace-series-a.pdf` | Series A release you wrote |
 | `press-release-trelora-expansion.pdf` | Expansion release you wrote |
+| `media-strategy-deck-series-a.pdf` | Series A media strategy deck, reporter names and pricing slide withheld |
+| `proposal-pr-and-social-startup-ria.pdf` | Anonymized engagement proposal, startup RIA, pricing removed |
+| `proposal-pr-investment-firm.pdf` | Anonymized proposal, reporter names and rate withheld |
+| `messaging-positioning-framework-sample.pdf` | Original MPF written for an invented product |
+| `case-study-ai-credentialing.pdf` | Anonymized case study, original design preserved |
+| `journalism-colorado-securities-commissioner.pdf` | Denver Business Journal investigation clip |
+| `journalism-sba-lending-colorado.pdf` | Denver Business Journal data reporting clip |
 | `earned-media-and-pr-portfolio.pdf` | Full compilation, contact block redacted |
 
 The four anonymized samples were rebuilt from the originals rather than redacted, because the client names in the source PDFs were baked into screenshots. Their source HTML is not in this repo — ask if you want it back to re-edit.
