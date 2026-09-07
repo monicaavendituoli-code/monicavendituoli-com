@@ -469,6 +469,27 @@ hr {
 
 .anchor-offset { scroll-margin-top: 132px; }
 
+/* Subsection inside a section, used for client awards under earned media */
+.subsection { margin-top: 3.5rem; scroll-margin-top: 132px; }
+.subsection::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background: var(--accent-soft);
+  margin-bottom: 2.25rem;
+}
+.subsection__head {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  margin-bottom: .5rem;
+}
+.subsection__intro {
+  max-width: var(--measure);
+  color: var(--text-muted);
+  margin-bottom: 1.75rem;
+}
+
+
 /* Work page: sticky sub-nav */
 .subnav {
   position: sticky;
