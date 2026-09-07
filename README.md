@@ -66,17 +66,18 @@ Every `git push` to `main` redeploys automatically. Pull requests get preview UR
 
 ### Changing colors
 
-Everything lives in the `:root` block at the top of `assets/css/style.css`. Light mode is the default; the dark values are in the two blocks right below it. Change a token in one place and it propagates.
+Everything lives in the `:root` block at the top of `assets/css/style.css`. Light mode is the default and the dark values sit in the two blocks right below it. Change a token in one place and it propagates.
 
 | Token | Light | Role |
 | --- | --- | --- |
-| `--bg` | `#fefae0` cornsilk | Page background |
-| `--text` | `#283618` dark green | Body text |
-| `--accent` | `#bc6c25` tiger's eye | Links, buttons, active nav |
-| `--tag-bg` | `#606c38` moss @ 12% | Tag pills, hover states |
-| `--wheat` | `#dda15e` | Blockquote rules, accents |
+| `--bg` | `#fdfffc` baby powder | Page background |
+| `--text` | `#011627` rich black | Body text |
+| `--accent` | `#14837a` | Links, buttons, active nav |
+| `--teal` | `#2ec4b6` tiffany blue | Tag pills, hover states, dark mode accent |
+| `--orange` | `#ff9f1c` orange peel | Blockquote rules, secondary accents |
+| `--red` | `#e71d36` rose red | Reserved for emphasis, used sparingly |
 
-Dark mode uses a lightened accent (`#e0a05c`) because `#bc6c25` doesn't hit 4.5:1 contrast on a dark ground.
+Two colors in the source palette are too light to use as link text on a near-white page. Pure `#2ec4b6` only reaches 2.16:1 against the background and `#ff9f1c` reaches 2.04:1, where 4.5:1 is the accessibility floor. So links use a darkened teal, `#14837a` at 4.58:1, while the pure teal does the work it is good at, backgrounds, borders and tag pills. Dark mode flips this. On `#011627` the pure teal hits 8.46:1, so it is used directly.
 
 ### Adding a work sample
 
