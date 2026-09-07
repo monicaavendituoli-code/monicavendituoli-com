@@ -93,7 +93,7 @@
 html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
-  scroll-padding-top: 88px;
+  scroll-padding-top: 132px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -468,7 +468,7 @@ hr {
 .section__head { max-width: var(--measure); margin-bottom: 2rem; }
 .section__head p { color: var(--text-muted); }
 
-.anchor-offset { scroll-margin-top: 90px; }
+.anchor-offset { scroll-margin-top: 132px; }
 
 /* Work page: sticky sub-nav */
 .subnav {
@@ -600,3 +600,30 @@ hr {
   font-size: .93rem;
 }
 .tweet-grid .twitter-tweet-rendered { border: 0; padding: 0; background: none; }
+
+/* Muted secondary chip, used for archived copies */
+.chip-link--muted {
+  color: var(--text-muted);
+  border-color: var(--rule-strong);
+}
+.chip-link--muted:hover {
+  background: var(--tag-bg);
+  border-color: var(--rule-strong);
+  color: var(--text);
+}
+
+/* Framed external page and LinkedIn post embeds */
+.embed--page iframe,
+.li-embed iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+  background: #fff;
+}
+.li-embed {
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg-raised);
+  max-width: 560px;
+}
